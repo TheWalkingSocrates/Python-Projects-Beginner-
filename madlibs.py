@@ -8,10 +8,10 @@ subject = input("Enter The Subject: ")
 company = input("Enter The Company: ")
 position =input("Enter The Position: ")
 
-chomu = person.lower()
-if(chomu== 'guy'):
+gchooser = person.lower()
+if(gchooser== 'guy'):
     gender = "He"
-elif(chomu == 'girl'):
+elif(gchooser == 'girl'):
     gender = 'she'
 else:
     gender = 'They'
