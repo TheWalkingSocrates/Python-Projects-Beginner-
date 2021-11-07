@@ -36,49 +36,14 @@ def game():
             continue
 
         if count >=5:
-            if board['7'] == board['8'] == board['9'] != ' ':   #7 8 9 
-                printBoard(board)
-                print("\nGame Over.\n")                
-                print(f" **** {turn} won. ****")                
-                break
-
-            elif board['4'] == board['5'] == board['6'] != ' ': #4 5 6
-                printBoard(board)
-                print("\nGame Over.\n")                
-                print(f" **** {turn} won. ****")                
-                break
-            
-            elif board['1'] == board['2'] == board['3'] != ' ': #1 2 3
-                printBoard(board)
-                print("\nGame Over.\n")                
-                print(f" **** {turn} won. ****")                
-                break
-
-            elif board['1'] == board['4'] == board['7'] != ' ': #1 4 7
-                printBoard(board)
-                print("\nGame Over.\n")                
-                print(f" **** {turn} won. ****")                
-                break
-
-            elif board['2'] == board['5'] == board['8'] != ' ': #2 5 8
-                printBoard(board)
-                print("\nGame Over.\n")                
-                print(f" **** {turn} won. ****")                
-                break
-
-            elif board['3'] == board['6'] == board['9'] != ' ': #3 6 9
-                printBoard(board)
-                print("\nGame Over.\n")                
-                print(f" **** {turn} won. ****")                
-                break
-
-            elif board['1'] == board['5'] == board['9'] != ' ': #1 5 9
-                printBoard(board)
-                print("\nGame Over.\n")                
-                print(f" **** {turn} won. ****")                
-                break
-            
-            elif board['3'] == board['5'] == board['7'] != ' ': #3 5 7 
+            if(board['7'] == board['8'] == board['9'] != ' ' or 
+             (board['4'] == board['5'] == board['6'] != ' ') or 
+             (board['1'] == board['2'] == board['3'] != ' ') or 
+             (board['1'] == board['4'] == board['7'] != ' ') or 
+             (board['2'] == board['5'] == board['8'] != ' ') or
+             (board['3'] == board['6'] == board['9'] != ' ') or 
+             (board['1'] == board['5'] == board['9'] != ' ') or 
+             (board['3'] == board['5'] == board['7'] != ' ')) :   
                 printBoard(board)
                 print("\nGame Over.\n")                
                 print(f" **** {turn} won. ****")                
